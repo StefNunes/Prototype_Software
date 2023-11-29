@@ -8,6 +8,8 @@ package prototype_software;
  *
  * @author Stefani Nunes
  */
-public class User {
+public interface User {
+ 
+  
     
 }
