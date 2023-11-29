@@ -27,6 +27,11 @@ public class Admin extends User implements UserInterface{
          //to modify their onw profile
         
     }
+    @Override
+    // if the used username and password matches the admin choise
+    public boolean login(String userUsername, String userpassword){
+        return this.username.equals(userUsername) && this.password.equals(userpassword);
+    }
     
   //METHODS DECLARATIONS  
     public void accessUsers(){
