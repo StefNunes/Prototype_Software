@@ -8,6 +8,18 @@ package prototype_software;
  *
  * @author Stefani Nunes
  */
-public class Regular_User {
+public class Regular_User extends User implements UserInterface{
+     String name;
+     String surname;
+
+    public Regular_User(String username, String password) {
+        super(username, password);
+    }
     
+   @Override
+    public void modifyProfile(){
+         //to modify their onw profile
+        
+    }
+   
 }
