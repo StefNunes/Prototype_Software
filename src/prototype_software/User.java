@@ -8,7 +8,31 @@ package prototype_software;
  *
  * @author Stefani Nunes
  */
-public interface User {
+
+
+
+
+//User interface
+interface UserInterface{
+    void modifyProfile();
+}
+
+
+
+
+public class User {
+    
+    String username;
+    String password;
+
+    //CONSTRUCTOR
+    
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+    
+    
  
   
     

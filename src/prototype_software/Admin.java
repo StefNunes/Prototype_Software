@@ -9,17 +9,20 @@ package prototype_software;
  * @author Stefani Nunes
  */
 
-public class Admin implements User{
+public class Admin extends User{
 
-    String username;
-    String password;
+    String name;
+    String surname;
    
     //CONSTRUCTOR
 
-    public Admin(String username, String password) {
-        this.username = username;
-        this.password = password;
+    public Admin(String name, String surname, String username, String password) {
+        super(username, password);
+        this.name = name;
+        this.surname = surname;
     }
+
+    
 
   //METHODS DECLARATIONS
     public void modifyProfile(){
@@ -30,7 +33,7 @@ public class Admin implements User{
         //to access a list of all users
     }
     
-    public void removeUsers(){
+    public void removeUsers(User user){
         //to remove other users from the system
     }
     
