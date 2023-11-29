@@ -18,7 +18,7 @@ public class Regular_User extends User implements UserInterface{
     
    @Override
     public void modifyProfile(){
-         //to modify their onw profile
+         //// Implement modification for RegularUsers profile
         
     }
    
