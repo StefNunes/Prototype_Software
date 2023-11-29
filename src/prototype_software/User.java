@@ -14,10 +14,8 @@ package prototype_software;
 
 //User interface
 interface UserInterface{
-    void modifyProfile();
+public void modifyProfile();
 }
-
-
 
 
 public class User {

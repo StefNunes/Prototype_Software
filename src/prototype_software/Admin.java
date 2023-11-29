@@ -9,7 +9,7 @@ package prototype_software;
  * @author Stefani Nunes
  */
 
-public class Admin extends User{
+public class Admin extends User implements UserInterface{
 
     String name;
     String surname;
@@ -22,13 +22,13 @@ public class Admin extends User{
         this.surname = surname;
     }
 
-    
-
-  //METHODS DECLARATIONS
+    @Override
     public void modifyProfile(){
-        //to modify their onw profile
+         //to modify their onw profile
+        
     }
     
+  //METHODS DECLARATIONS  
     public void accessUsers(){
         //to access a list of all users
     }
